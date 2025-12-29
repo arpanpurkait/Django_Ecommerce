@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GreatKart | One of the Biggest Online Shopping Platform</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+    <!-- CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ui.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="{% static 'fonts/fontawesome/css/all.min.css' %}" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="{% static 'js/jquery-2.0.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<body>
+    {% include 'includes/navbar.html' %}
+    {% block content %}
+
+    <!-- content -->
+
+
+    {% endblock %}
+    {% include 'includes/footer.html' %}
